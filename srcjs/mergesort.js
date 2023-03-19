@@ -83,7 +83,7 @@ async function merge(ele, low, mid, high) {
   
   const mergeSortBtn = document.querySelector(".merge");
   mergeSortBtn.addEventListener("click", async function () {
-    
+
     
   
     let ele = document.querySelectorAll(".bar");

@@ -11,7 +11,7 @@ function createNewArray(noOfBars = 100) {
   arr = [];
 
   for (let i = 0; i < noOfBars; i++) {
-    arr.push(Math.floor(Math.random() * 250) + 1);
+    arr.push(Math.floor(Math.random() * 150) + 1);
   }
   console.log(arr);
 
@@ -21,7 +21,7 @@ function createNewArray(noOfBars = 100) {
   // create multiple element div using loop and adding class 'bar col'
   for (let i = 0; i < noOfBars; i++) {
     const bar = document.createElement("div");
-    bar.style.height = `${2 * arr[i]}px`;
+    bar.style.height = `${2* arr[i]}px`;
     bar.style.margin = "0% 0.1%";
     bar.style.width = `${100 / noOfBars - 2 * 0.1}%`;
     bar.style.background = "rgb(23, 244, 244)";

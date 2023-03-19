@@ -28,7 +28,6 @@ async function insertion() {
   insertionBtn.addEventListener("click", async function () {
     
   
-  
     disableSortingBtn();
     disableSizeBtn();
     disableArrayBtn();

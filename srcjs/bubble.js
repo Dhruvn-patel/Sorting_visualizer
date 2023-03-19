@@ -18,23 +18,8 @@ async function bubble() {
 }
 
 const bubbleSortBtn = document.querySelector(".bubble");
+
 bubbleSortBtn.addEventListener("click", async function () {
-  
-
-  const bc = document.createElement("h5");
-  const ac = document.createElement("h5");
-  const wc = document.createElement("h5");
-
-  bc.style.color = "white";
-//   timeComplexity.appendChild(bc);
-
-  ac.style.color = "white";
-//   timeComplexity.appendChild(ac);
-
-  wc.style.color = "white";
-//   timeComplexity.appendChild(wc);
-
-
 
   disableSortingBtn();
   disableSizeBtn();
