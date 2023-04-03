@@ -3,14 +3,17 @@ async function selection() {
   const ele = document.querySelectorAll(".bar");
   for (let i = 0; i < ele.length; i++) {
     let min_index = i;
+    //current values of idx to compare 
     ele[i].style.background = "blue";
     for (let j = i + 1; j < ele.length; j++) {
+      //find miniIndex
       ele[j].style.background = "red";
       await wait(delay);
       if (
         parseInt(ele[j].style.height) < parseInt(ele[min_index].style.height)
       ) {
         if (min_index != i) {
+          //default color
           ele[min_index].style.background = "cyan";
         }
         min_index = j;
